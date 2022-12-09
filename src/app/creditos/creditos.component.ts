@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Credit } from './credit';
+import { Cliente } from '../clientes/cliente';
 import { CreditService } from './credit.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { CreditService } from './credit.service';
   styleUrls: ['./creditos.component.css']
 })
 export class CreditosComponent implements OnInit {
-  credits : Array<Credit> = new Array<Credit>();
+  credits : Array<Cliente> = new Array<Cliente>();
   constructor(private creditService: CreditService) { }
 
   getCredits(): void{
