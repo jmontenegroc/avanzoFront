@@ -1,0 +1,31 @@
+<div id="container" *ngIf="enviado == false">
+  <div class="creditos">
+    <input type="text" placeholder="Documento" #doc />
+  </div>
+  <div class="creditos">
+    <button class="btn btn-primary" (click)="enviar(doc.value)">
+      Buscar Credito
+    </button>
+  </div>
+</div>
+
+<div id="container" *ngIf="enviado">
+  <div class="container-fluid" id="credito">
+    <div class="row">
+      <p>ID: {{cliente.id}}</p>
+    </div>
+    <div *ngFor="let credito of cliente.credits">
+      <div class="row">
+        <p>Id: {{credito.id}}</p>
+      </div>
+      <div class="row">
+        <p>Fecha: {{credito.creditAmount }}</p>
+      </div>
+      <div class="row">
+        <p>Estado: {{credito.state}}</p>
+      </div>
+      <div class="row">
+        <p>Fecha: {{credito.creditDate}}</p>
+      </div>
+  </div>
+</div>

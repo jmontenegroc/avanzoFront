@@ -1,0 +1,18 @@
+.creditos button{
+    background-color: #0171bb;
+}
+
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.creditos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
