@@ -1,16 +1,18 @@
-<div *ngFor="let cliente of credits">
-  <div *ngFor="let credito of cliente.credits">
-    <div class="row">
-      <p>Id: {{credito.id}}</p>
-    </div>
-    <div class="row">
-      <p>Fecha: {{credito.creditAmount }}</p>
-    </div>
-    <div class="row">
-      <p>Estado: {{credito.state}}</p>
-    </div>
-    <div class="row">
-      <p>Fecha: {{credito.creditDate}}</p>
+<div class="container-fluid">
+  <div *ngFor="let cliente of credits" id="creditos">
+    <div *ngFor="let credito of cliente.credits" class="card">
+      <div class="row">
+        <p>Id: {{credito.id}}</p>
+      </div>
+      <div class="row">
+        <p>Fecha: {{credito.creditAmount }}</p>
+      </div>
+      <div class="row">
+        <p>Estado: {{credito.state}}</p>
+      </div>
+      <div class="row">
+        <p>Fecha: {{credito.creditDate}}</p>
+      </div>
     </div>
   </div>
 </div>

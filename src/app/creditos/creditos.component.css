@@ -1,0 +1,11 @@
+#creditos div {
+    color: #1d70b6;
+    font-size: 20px;
+    border-color: #1d70b6;
+    border-radius: 8px;
+}
+
+#creditos div :hover {
+    color: white;
+    background-color: #1d70b6;
+}
