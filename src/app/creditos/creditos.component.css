@@ -5,7 +5,7 @@
     border-radius: 8px;
 }
 
-#creditos div :hover {
+#creditos div:hover {
     color: white;
     background-color: #1d70b6;
 }
